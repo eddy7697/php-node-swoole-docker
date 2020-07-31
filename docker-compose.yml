@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  node_sevenone:
+    image: eddy7697/php-node-image:1.0.2
+    # container_name: sevenone-image
+    ports:
+      - 80:80
+      - 443:443
+      - 9000:9000
+    stdin_open: true
+    tty: true
+    # command: "php artisan migrate:refresh --seed"
